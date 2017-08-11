@@ -1,12 +1,22 @@
-Celsius to Fahrenheit.py__author__ = 'Peter'
-score = float(input("Enter score: "))
-if score < 0:
-    print("Invalid Score")
-elif score > 100:
-    print("Invalid score")
-elif score > 90:
-    print("Excellent")
-elif score >= 50:
-    print("Passable")
-else:
-    print("Bad")
+def main():
+    score = float(input("Enter score: "))
+    if score < 0:
+        print("Invalid Score")
+    elif score > 100:
+        print("Invalid score")
+    else:
+        result = score_catagory(score)
+    print (result)
+
+
+def score_catagory(score):
+    if score > 90:
+        result = ("Awesome")
+    elif score >= 50:
+        result = ("Passable")
+    else:
+        result = ("Bad")
+    return result
+
+
+main()
